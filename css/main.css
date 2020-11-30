@@ -46,7 +46,7 @@ textarea {
 
 .browserupgrade {
     margin: 0.2em 0;
-    background: #ccc;
+    background: #000000;
     color: #000;
     padding: 0.2em 0;
 }
@@ -60,14 +60,17 @@ textarea {
    html,
    body {
      height: 100%;
+     background-color: black;
    }
    
    body {
      width: 100%;
+     padding: 0;
+    margin: 0px;
    }
    
    .header {
-     color: white;
+     color: black;
      font-size: 50px;
    }
    
@@ -81,7 +84,7 @@ textarea {
    .scene {
      height: 100%;
      width: 100%;
-     background: #EAEAEA;
+     background: #000000;
    }
    
    .center {
@@ -93,6 +96,20 @@ textarea {
              align-items: center;
      height: 100%;
    }
+
+   .door {
+    height: 100%;
+    margin-left: auto;
+    margin-right: 0;
+    max-width: 50%;
+    width: 100%;
+    left: 0; right: 0;
+    background-image: url(../img/door.png);
+    background-repeat: no-repeat;
+    background-position: 3000px 90%;
+    position: absolute;
+    z-index: 10;
+  }
    
    .viewer {
      height: 100%;
@@ -101,9 +118,9 @@ textarea {
      max-width: 350px;
      width: 100%;
      left: 0; right: 0;
-     background-image: url(../img/monkey.png);
+     background-image: url(../img/monkey2.png);
      background-repeat: no-repeat;
-     background-position: 50px 50%;
+     background-position: -38px 50%;
      position: absolute;
      z-index: 5;
    }
@@ -113,91 +130,77 @@ textarea {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    background-image: url(../img/green-grass-field-1.jpg);
+    background:#000000 url(../img/green-grass-field-1.jpg);
     background-repeat: repeat-x !important;
     background-repeat: no-repeat;
-    background-position: 0px 50%;
+    background-position: 0px 100%;
     position: absolute;
     z-index: 2;
   }
    
    .viewer.frame1 {
-     background-position: -300px 50%;
+     background-position: -550px 50%;
    }
    
    .viewer.frame2 {
-     background-position: -638px 50%;
+     background-position: -1075px 50%;
    }
    
    .viewer.frame3 {
-     background-position: -982px 50%;
+     background-position: -1607px 50%;
    }
    
    .viewer.frame4 {
-     background-position: -1300px 50%;
+     background-position: -2077px 50%;
    }
 
    .viewer.frame5 {
-    background-position: 50px 50%;
+    background-position: -2525px 50%;
   } 
    .viewer.frame6 {
-    background-position: -300px 50%;
+    background-position: -2979px 50%;
   }
   
   .viewer.frame7 {
-    background-position: -638px 50%;
+    background-position: -3475px 50%;
   }
   
   .viewer.frame8 {
-    background-position: -982px 50%;
+    background-position: -3957px 50%;
   }
   
   .viewer.frame9 {
-    background-position: -1300px 50%;
+    background-position: -4465px 50%;
   }
   
   .viewer.frame10 {
-    background-position: 50px 50%;
+    background-position: -4965px 50%;
   } 
 
   .viewer.frame11 {
-    background-position: -300px 50%;
+    background-position: -5490px 50%;
   }
   
   .viewer.frame12 {
-    background-position: -638px 50%;
+    background-position: -5994px 50%;
   }
   
   .viewer.frame13 {
-    background-position: -982px 50%;
+    background-position: -6471px 50%;
   }
   
   .viewer.frame14 {
-    background-position: -1300px 50%;
+    background-position: -6987px 50%;
   }
 
   .viewer.frame15 {
-   background-position: 50px 50%;
+   background-position: -7438px 50%;
  } 
   .viewer.frame16 {
-   background-position: -300px 50%;
+   background-position: -38px 50%;
  }
  
- .viewer.frame17 {
-   background-position: -638px 50%;
- }
- 
- .viewer.frame18 {
-   background-position: -982px 50%;
- }
- 
- .viewer.frame19 {
-   background-position: -1300px 50%;
- }
- 
- .viewer.frame20 {
-   background-position: 50px 50%;
- } 
+
   
 
 
@@ -207,81 +210,165 @@ textarea {
 
    
  .viewer-bg.frame1 {
-    background-position: -100px 50%;
+    background-position: -100px 100%;
   }
   
   .viewer-bg.frame2 {
-    background-position: -300px 50%;
+    background-position: -300px 100%;
   }
   
   .viewer-bg.frame3 {
-    background-position: -500px 50%;
+    background-position: -500px 100%;
   }
   
   .viewer-bg.frame4 {
-    background-position: -700px 50%;
+    background-position: -700px 100%;
   }
 
   .viewer-bg.frame5 {
-   background-position: -1500px 50%;
+   background-position: -1500px 100%;
  } 
   .viewer-bg.frame6 {
-   background-position: -1800px 50%;
+   background-position: -1800px 100%;
  }
  
  .viewer-bg.frame7 {
-   background-position: -2200px 50%;
+   background-position: -2200px 100%;
  }
  
  .viewer-bg.frame8 {
-   background-position: -2500px 50%;
+   background-position: -2500px 100%;
  }
  
  .viewer-bg.frame9 {
-   background-position: -3000px 50%;
+   background-position: -3000px 100%;
  }
  
  .viewer-bg.frame10 {
-   background-position: -3500px 50%;
+   background-position: -3500px 100%;
  } 
 
  .viewer-bg.frame11 {
-   background-position: -4000px 50%;
+   background-position: -4000px 100%;
  }
  
  .viewer-bg.frame12 {
-   background-position: -4500px 50%;
+   background-position: -4500px 100%;
  }
  
  .viewer-bg.frame13 {
-   background-position: -4800px 50%;
+   background-position: -4800px 100%;
  }
  
  .viewer-bg.frame14 {
-   background-position: -5100px 50%;
+   background-position: -5100px 100%;
  }
 
  .viewer-bg.frame15 {
-  background-position: -5500px 50%;
+  background-position: -5500px 100%;
 } 
  .viewer-bg.frame16 {
-  background-position: -6000px 50%;
+  background-position: -6000px 100%;
 }
 
 .viewer-bg.frame17 {
-  background-position: -6700px 50%;
+  background-position: -6700px 100%;
 }
 
 .viewer-bg.frame18 {
-  background-position: -7000px 50%;
+  background-position: -7000px 100%;
 }
 
 .viewer-bg.frame19 {
-  background-position: -7200px 50%;
+  background-position: -7200px 100%;
 }
 
 .viewer-bg.frame20 {
-  background-position: 0px 50%;
+  background-position: 0px 100%;
+} 
+
+
+
+
+
+
+   
+.door.frame1 {
+    background-position: 3000px 100%;
+  }
+  
+  .door.frame2 {
+    background-position: 3000px 100%;
+  }
+  
+  .door.frame3 {
+    background-position: 3000px 100%;
+  }
+  
+  .door.frame4 {
+    background-position: 3000px 100%;
+  }
+
+  .door.frame5 {
+   background-position: 2600px 100%;
+ } 
+  .door.frame6 {
+   background-position: 2200px 100%;
+ }
+ 
+ .door.frame7 {
+   background-position: 1800px 100%;
+ }
+ 
+ .door.frame8 {
+   background-position: 1000px 100%;
+ }
+ 
+ .door.frame9 {
+   background-position: 800px 100%;
+ }
+ 
+ .door.frame10 {
+   background-position: 600px 100%;
+ } 
+
+ .door.frame11 {
+   background-position: 400px 100%;
+ }
+ 
+ .door.frame12 {
+   background-position: 200px 100%;
+ }
+ 
+ .door.frame13 {
+   background-position: 100px 100%;
+ }
+ 
+ .door.frame14 {
+   background-position: 50px 100%;
+ }
+
+ .door.frame15 {
+  background-position: 0px 100%;
+} 
+ .door.frame16 {
+  background-position: 3000px 100%;
+}
+
+.door.frame17 {
+  background-position: 3000px 100%;
+}
+
+.door.frame18 {
+  background-position: 3000px 100%;
+}
+
+.door.frame19 {
+  background-position: 3000px 100%;
+}
+
+.door.frame20 {
+  background-position: 3000px 100%;
 } 
    
 
@@ -430,3 +517,48 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-perspective: 1000;
+            perspective: 1000;
+  }
+  
+  .section {
+    height: 100%;
+    width: calc( 100% / 5 );
+    float: left;
+    position: relative;
+  }
+  .section:nth-child(1) {
+    background: #F64747;
+  }
+  .section:nth-child(2) {
+    background: #22A7F0;
+  }
+  .section:nth-child(3) {
+    background: #F9690E;
+  }
+  .section:nth-child(4) {
+    background: #9B59B6;
+  }
+  .section:nth-child(5) {
+    background: #03C9A9;
+  }
+  .sections {
+    width: 500%;
+    height: 100%;
+  }
+  .section__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: #fff;
+  }
+  
